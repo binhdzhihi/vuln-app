@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VulnApp Home</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Welcome to VulnApp 🐍</h1>
+  <form action="/search" method="get">
+    <input type="text" name="name" placeholder="Search users...">
+    <button type="submit">Search</button>
+  </form>
+
+  <h2>Leave a note</h2>
+  <form action="/comment" method="post">
+    <textarea name="note" rows="3" cols="30" placeholder="Your note..."></textarea><br>
+    <button type="submit">Post Note</button>
+  </form>
+</body>
+</html>

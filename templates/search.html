@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Search Results</h1>
+  {% if results %}
+    <ul>
+    {% for row in results %}
+      <li>{{ row.username }} — {{ row.email }}</li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>No users found.</p>
+  {% endif %}
+  <a href="/">Back</a>
+</body>
+</html>
